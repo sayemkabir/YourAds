@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\AdvertisersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/category',[CategoryController::class,'viewcategory'])->name('category.name');
+
+Route::get('/advertisers',[AdvertisersController::class,'viewadvertisers'])->name('advertisers.name');
+
+Route::post("/category/create",[CategoryController::class,'createcategory'])->name('category.create');
