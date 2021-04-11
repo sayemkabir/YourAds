@@ -8,14 +8,14 @@ use App\Models\Category;
 
 class CategoryController extends Controller
 {
-    public function viewcategory(){
+    public function viewCategory(){
 
 $categories=Category::all();
-//dd($categories);
-        return view('backend.layouts.category',compact('categories'));
+$title="CATEGORY LIST";
+        return view('backend.layouts.category.category',compact('title','categories'));
     }
 
-    public function createcategory(Request $request){
+    public function createCategory(Request $request){
 
     Category::create([
 

@@ -22,10 +22,11 @@
     <tr>
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->name}}</td>
-        <td>{{$data->description}}</td>
+        <td style="width: 50%">{{$data->description}}</td>
         <td>
             <a class="btn btn-success" href="">View</a>
             <a class="btn btn-danger" href="">Delete</a>
+            <a class="btn btn-info" href="">Edit</a>
         </td>
     </tr>
 

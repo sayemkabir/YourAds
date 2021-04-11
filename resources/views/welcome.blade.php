@@ -18,7 +18,7 @@
         </div>
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="navbar-header">
-                <!-- Navbar Header--><a href="index.html" class="navbar-brand">
+                <!-- Navbar Header--><a href="http://localhost/yourads/public/" class="navbar-brand">
                     <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Your</strong><strong>Ads</strong></div>
                     <div class="brand-text brand-sm"><strong class="text-primary">Y</strong><strong>A</strong></div></a>
                 <!-- Sidebar Toggle Btn-->
@@ -44,7 +44,7 @@
     <div class="page-content">
         <div class="page-header">
             <div class="container-fluid">
-                <h2 class="h5 no-margin-bottom">Dashboard</h2>
+                <h2 class="h5 no-margin-bottom">{{$title}}</h2>
 
             </div>
         </div>
